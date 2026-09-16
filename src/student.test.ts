@@ -1,5 +1,13 @@
+/**
+ * Lightweight automated checks for the student utilities.
+ *
+ * The lab uses this dependency-free test file to demonstrate that status labels
+ * and runtime validation work for valid, invalid, and unexpected input.
+ */
+
 import { getStudentStatusLabel, isStudent } from './student.js';
 
+/** Throws a descriptive error when two values expected to be equal differ. */
 function assertEqual<T>(actual: T, expected: T, message: string): void {
   if (actual !== expected) {
     throw new Error(

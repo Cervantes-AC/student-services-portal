@@ -44,4 +44,4 @@ npm run verify
 
 ## AI usage policy
 
-AI tools may assist development, but generated suggestions are not committed blindly. Each suggestion must be understood, reviewed, adjusted where appropriate, tested, and verified against official documentation before it is committed. The AI record and verification notes for this laboratory are in [docs/LABORATORY_REPORT.md](docs/LABORATORY_REPORT.md).
+AI tools may assist development, but generated suggestions are not committed blindly. Each suggestion must be understood, reviewed, adjusted where appropriate, tested, and verified against official documentation before it is committed. The AI record and verification notes for this laboratory are in [documentation/LABORATORY_REPORT.md](documentation/LABORATORY_REPORT.md).

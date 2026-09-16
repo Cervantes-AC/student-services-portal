@@ -1,3 +1,10 @@
+/**
+ * Application entry point for the Laboratory 1 demonstration.
+ *
+ * It shows typed student formatting, generic API response usage, safe status
+ * display text, and runtime validation of valid and malformed external data.
+ */
+
 import {
   formatStudent,
   getStudentStatusLabel,
@@ -6,23 +13,27 @@ import {
   type Student,
 } from './student.js';
 
+/** A valid example used to demonstrate the Student model. */
 const sampleStudent: Student = {
   id: 101,
-  name: 'Avery Santos',
-  email: 'avery.santos@example.edu',
+  name: 'Aaron Clyde C. Cervantes',
+  email: 'aaron.cervantes@example.edu',
   status: 'active',
 };
 
+/** Demonstrates a generic response whose data is exactly one Student. */
 const singleStudentResponse: ApiResponse<Student> = {
   success: true,
   data: sampleStudent,
 };
 
+/** Demonstrates the same generic response with an array payload. */
 const studentListResponse: ApiResponse<Student[]> = {
   success: true,
   data: [sampleStudent],
 };
 
+/** Contains one valid value and two malformed values received as unknown data. */
 const validationExamples: unknown[] = [
   sampleStudent,
   { ...sampleStudent, id: '101' },
