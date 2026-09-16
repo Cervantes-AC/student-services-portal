@@ -1,5 +1,6 @@
 import {
   formatStudent,
+  getStudentStatusLabel,
   isStudent,
   type ApiResponse,
   type Student,
@@ -29,6 +30,7 @@ const validationExamples: unknown[] = [
 ];
 
 console.log(formatStudent(sampleStudent));
+console.log(getStudentStatusLabel(sampleStudent.status));
 console.log('Single response is successful:', singleStudentResponse.success);
 console.log('Student list count:', studentListResponse.data.length);
 

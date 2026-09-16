@@ -16,6 +16,18 @@ export function formatStudent(student: Student): string {
   return `${student.id} - ${student.name} (${student.status})`;
 }
 
+/** Converts known statuses to display text and safely handles untrusted input. */
+export function getStudentStatusLabel(status: unknown): string {
+  switch (status) {
+    case 'active':
+      return 'Active Student';
+    case 'inactive':
+      return 'Inactive Student';
+    default:
+      return 'Unknown Student Status';
+  }
+}
+
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null;
 }
