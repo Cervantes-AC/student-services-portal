@@ -47,6 +47,12 @@ npm run verify
 AI tools may assist development, but generated suggestions are not committed blindly. Each suggestion must be understood, reviewed, adjusted where appropriate, tested, and verified against official documentation before it is committed. The AI record and verification notes for this laboratory are in [documentation/LABORATORY_REPORT.md](documentation/LABORATORY_REPORT.md).
 
 ## Screenshots
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
 
 <!-- Replace the path below with your screenshot file after adding it to the repository. -->
 ![Laboratory 1 verification screenshot](documentation/images/verification-screenshot.png)
